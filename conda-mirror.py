@@ -48,4 +48,4 @@ if(int(sel) <= index):
     print("清除原有的镜像。")
     ClearChannel()
     print("设置新镜像。")
-    SetChannel(AllMirrors[int(sel)]["mirrors"])
+    SetChannel(AllMirrors[int(sel) - 1]["mirrors"])
