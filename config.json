@@ -1,0 +1,56 @@
+[
+	{
+		"name": "中科大镜像源",
+		"detect": "mirrors.ustc.edu.cn",
+		"mirrors":[
+			"https://mirrors.ustc.edu.cn/anaconda/pkgs/main/",
+			"https://mirrors.ustc.edu.cn/anaconda/pkgs/free/",
+			"https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/",
+			"https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/",
+			"https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/",
+			"https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/",
+			"https://mirrors.ustc.edu.cn/anaconda/cloud/"
+		]
+	},
+	{
+		"name": "阿里镜像源",
+		"detect": "mirrors.aliyun.com",
+		"mirrors":[
+			"https://mirrors.aliyun.com/pypi/simple/"
+		]
+	},
+	{
+		"name": "豆瓣镜像源",
+		"detect": "pypi.douban.com",
+		"mirrors":[
+			"http://pypi.douban.com/simple/"
+		]
+	},
+	{
+		"name": "中国科学技术大学镜像源",
+		"detect": "mirrors.ustc.edu.cn",
+		"mirrors":[
+			"https://mirrors.ustc.edu.cn/anaconda/pkgs/main/",
+			"https://mirrors.ustc.edu.cn/anaconda/pkgs/free/",
+			"https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/"
+		]
+	},
+	{
+		"name": "上海交通大学开源镜像站",
+		"detect": "mirrors.sjtug.sjtu.edu.cn",
+		"mirrors":[
+			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main/",
+			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/free/",
+			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/conda-forge/"
+		]
+	},
+	{
+		"name": "北外镜像源",
+		"detect": "mirrors.bfsu.edu.cn",
+		"mirrors":[
+			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/r",
+			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2"
+		]
+	}
+
+]
