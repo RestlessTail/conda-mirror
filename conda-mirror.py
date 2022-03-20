@@ -3,8 +3,11 @@ import json
 def ClearChannel():
     os.system("conda config --remove-key channels")
 
+def CleanIndex():
+    os.system("conda clean -i")
+
 def SetChannel(channelList):
-    for i in channelList:
+    for i in reversed(channelList):
         os.system("conda config --add channels " + i)
 
 def DetechDelay(ip, count):
@@ -49,3 +52,5 @@ if(int(sel) <= index):
     ClearChannel()
     print("设置新镜像。")
     SetChannel(AllMirrors[int(sel) - 1]["mirrors"])
+    print("清除索引。")
+    CleanIndex()
