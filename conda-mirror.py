@@ -44,7 +44,7 @@ sel = input("请选择镜像（默认为" + str(shortestDelayIndex) + "）：")
 if(sel == ""):
     print("默认选择最快的镜像。")
     sel = str(shortestDelayIndex)
-if(int(sel) < index):
+if(int(sel) <= index):
     print("清除原有的镜像。")
     ClearChannel()
     print("设置新镜像。")
