@@ -1,17 +1,21 @@
 [
 	{
-		"name": "中科大镜像源",
-		"detect": "mirrors.ustc.edu.cn",
+		"name": "阿里云镜像源",
+		"detect": "mirrors.aliyun.com",
 		"mirrors":[
-			"https://mirrors.ustc.edu.cn/anaconda/pkgs/main/"
+			"https://mirrors.aliyun.com/anaconda/cloud/msys2",
+			"https://mirrors.aliyun.com/anaconda/cloud/bioconda",
+			"https://mirrors.aliyun.com/anaconda/pkgs/main",
+			"https://mirrors.aliyun.com/anaconda/pkgs/r"
 		]
 	},
 	{
 		"name": "清华源",
 		"detect": "mirrors.tuna.tsinghua.edu.cn",
 		"mirrors":[
-			"https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/",
-			"https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/"
+			"https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/",
+			"https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/",
+			"https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/"
 		]
 	},
 	{
@@ -25,8 +29,9 @@
 		"name": "北外镜像源",
 		"detect": "mirrors.bfsu.edu.cn",
 		"mirrors":[
-			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/r",
-			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2"
+			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/ ",
+			"https://mirrors.bfsu.edu.cn/anaconda/cloud/conda-forge/ ",
+			"https://mirrors.bfsu.edu.cn/anaconda/cloud/bioconda/ "
 		]
 	}
 

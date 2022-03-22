@@ -11,8 +11,12 @@ def SetChannel(channelList):
         os.system("conda config --add channels " + i)
 
 def DetechDelay(ip, count):
-    delay = os.popen("ping " + ip + " -c " + str(count) + " | grep ^rtt | cut -d \" \" -f 4 | cut -d \"/\" -f 2", "r")
-    return float(delay.read())
+    delay = os.popen("ping " + ip + " -c " + str(count) + " -W 5 | grep ^rtt | cut -d \" \" -f 4 | cut -d \"/\" -f 2", "r")
+    time = delay.read()
+    if(time == ""):
+        return -1.0
+    else:
+        return float(time)
 
 def ReadConfig(filename):
     f = open(filename, "r")
@@ -21,7 +25,9 @@ def ReadConfig(filename):
     return obj
 
 def DelayLED(time):
-    if(time < 10.0):
+    if(time < 0.0):
+        coloredTime = "[———]"
+    elif(time < 10.0):
         coloredTime = "[●○○]"
     elif(time < 20.0):
         coloredTime = "[●●○]"
@@ -38,6 +44,9 @@ os.system("clear")
 for i in AllMirrors:
     index = index + 1
     delay = DetechDelay(i["detect"], 1)
+    if(delay < 0.0):
+        print(str(index) + " " + i["name"] + ": 无法连接 " + DelayLED(delay))
+        continue
     print(str(index) + " " + i["name"] + ": " + str(delay) + "ms " + DelayLED(delay))
     if(delay < shortestDelay):
         shortestDelay = delay
