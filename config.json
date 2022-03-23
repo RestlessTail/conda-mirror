@@ -22,16 +22,18 @@
 		"name": "上海交通大学开源镜像站",
 		"detect": "mirrors.sjtug.sjtu.edu.cn",
 		"mirrors":[
-			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main/"
+			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main/",
+			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/free/",
+			"https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/conda-forge/"
 		]
 	},
 	{
 		"name": "北外镜像源",
 		"detect": "mirrors.bfsu.edu.cn",
 		"mirrors":[
-			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/ ",
-			"https://mirrors.bfsu.edu.cn/anaconda/cloud/conda-forge/ ",
-			"https://mirrors.bfsu.edu.cn/anaconda/cloud/bioconda/ "
+			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/main",
+			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/r",
+			"https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2"
 		]
 	}
 
